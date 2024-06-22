@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombas Presurizadoras - DeWaSa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DeWaSa</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="hamburger">
+                    &#9776;
+                    <ul class="dropdown">
+                        <li><a href="services.html">Servicios</a>
+                            <ul class="submenu">
+                                <li><a href="aireadores.html">Aireadores</a></li>
+                                <li><a href="bombas.html">Bombas Presurizadoras</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="cotizacion.html">Calculadora de Cotización</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bombas Presurizadoras</h1>
+        <p>Las bombas presurizadoras aumentan la presión del agua en el hogar, proporcionando un flujo constante y potente.</p>
+        <h2>Beneficios</h2>
+        <ul>
+            <li>Mejora la presión del agua en toda la casa.</li>
+            <li>Instalación sencilla y operación silenciosa.</li>
+            <li>Aumenta la eficiencia de los electrodomésticos y las duchas.</li>
+        </ul>
+        <div class="product-images">
+            <img src="bomba1.jpg" alt="Bomba Presurizadora 1">
+            <img src="bomba2.jpg" alt="Bomba Presurizadora 2">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>DeWaSa &copy; 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
