@@ -8,16 +8,20 @@
 </head>
 <body>
     <header>
-        <h1>DeWaSa</h1>
-        <h2>Ahorro Profundo de Agua</h2>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#precios">Precios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="images/logo.png" alt="DeWaSa Logo" class="logo">
+            <h1>DeWaSa</h1>
+            <h2>Ahorro Profundo de Agua</h2>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                    <li><a href="#garantia">Garantía</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="inicio">
@@ -38,25 +42,46 @@
         <section id="precios">
             <h2>Precios</h2>
             <p>El servicio varía según el caso:</p>
-            <ol>
-                <li>El cliente compra los aireadores:
-                    <ul>
-                        <li>Instalación: $199.49</li>
-                        <li>Instalación incluyendo la bomba presurizadora: $499.89</li>
-                    </ul>
-                </li>
-                <li>Nosotros nos encargamos de los aireadores:
-                    <ul>
-                        <li>Precio variante de $800 a $1500 dependiendo la calidad</li>
-                        <li>Instalación: 9% del total de los gastos</li>
-                    </ul>
-                </li>
-                <li>Limpieza de aireadores gratis durante los primeros 6 meses después de la instalación.</li>
-            </ol>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Opción</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Instalación de aireadores (el cliente compra los aireadores)</td>
+                        <td>$199.49</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Instalación de aireadores y bomba presurizadora</td>
+                        <td>$499.89</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nosotros proporcionamos los aireadores (precio variante de $800 a $1500)</td>
+                        <td>Instalación: 9% del total de los gastos</td>
+                    </tr>
+                </tbody>
+            </table>
             <img src="images/precios.jpg" alt="Precios">
+        </section>
+        <section id="garantia">
+            <h2>Garantía del Servicio</h2>
+            <p>En DeWaSa, ofrecemos una garantía de satisfacción de 6 meses en la limpieza de aireadores después de la instalación. Si encuentras algún problema durante este periodo, estaremos encantados de resolverlo sin costo adicional.</p>
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
+            <p>Para más información o para solicitar nuestros servicios, contáctanos:</p>
+            <ul>
+                <li>Teléfono: +123 456 7890</li>
+                <li>Email: contacto@dewasa.com</li>
+                <li>Dirección: Calle Ejemplo 123, Ciudad, País</li>
+            </ul>
             <form id="contact-form">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
@@ -67,6 +92,17 @@
                 <button type="submit">Enviar</button>
             </form>
         </section>
+        <section id="calculadora">
+            <h2>Calculadora de Estimación de Precios</h2>
+            <form id="calc-form">
+                <label for="aireadores">Número de Aireadores:</label>
+                <input type="number" id="aireadores" name="aireadores" required>
+                <label for="bombas">Número de Bombas Presurizadoras:</label>
+                <input type="number" id="bombas" name="bombas" required>
+                <button type="submit">Calcular Precio</button>
+            </form>
+            <p id="resultado"></p>
+        </section>
     </main>
     <footer>
         <p>&copy; 2024 DeWaSa - Ahorro Profundo de Agua</p>
@@ -74,3 +110,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+      
