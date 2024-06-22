@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Cotización - DeWaSa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function calcularCotizacion() {
+            const numAireadores = document.getElementById('numAireadores').value;
+            const numBombas = document.getElementById('numBombas').value;
+            const costoAireadores = numAireadores * 36;
+            const costoBombas = numBombas * 499;
+            const manoDeObra = 300;
+            const total = costoAireadores + costoBombas + manoDeObra;
+
+            document.getElementById('resultado').innerText = `Total: $${total} MXN`;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">DeWaSa</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="hamburger">
+                    &#9776;
+                    <ul class="dropdown">
+                        <li><a href="services.html">Servicios</a>
+                            <ul class="submenu">
+                                <li><a href="aireadores.html">Aireadores</a></li>
+                                <li><a href="bombas.html">Bombas Presurizadoras</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="cotizacion.html">Calculadora de Cotización</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Calculadora de Cotización</h1>
+        <div class="calculator">
+            <label for="numAireadores">Número de Aireadores:</label>
+            <input type="number" id="numAireadores" name="numAireadores" min="0" value="0">
+            <label for="numBombas">Número de Bombas:</label>
+            <input type="number" id="numBombas" name="numBombas" min="0" value="0">
+            <button onclick="calcularCotizacion()">Calcular</button>
+            <p id="resultado">Total: $0 MXN</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>DeWaSa &copy; 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
