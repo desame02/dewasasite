@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aireadores - DeWaSa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DeWaSa</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="hamburger">
+                    &#9776;
+                    <ul class="dropdown">
+                        <li><a href="services.html">Servicios</a>
+                            <ul class="submenu">
+                                <li><a href="aireadores.html">Aireadores</a></li>
+                                <li><a href="bombas.html">Bombas Presurizadoras</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="cotizacion.html">Calculadora de Cotización</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Aireadores</h1>
+        <p>Los aireadores son dispositivos que se instalan en los grifos para reducir el consumo de agua sin comprometer la presión.</p>
+        <h2>Beneficios</h2>
+        <ul>
+            <li>Ahorro significativo de agua y reducción de costos.</li>
+            <li>Fácil instalación y mantenimiento.</li>
+            <li>Mejora la eficiencia del uso del agua.</li>
+        </ul>
+        <div class="product-images">
+            <img src="aireador1.jpg" alt="Aireador 1">
+            <img src="aireador2.jpg" alt="Aireador 2">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>DeWaSa &copy; 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
