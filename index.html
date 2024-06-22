@@ -45,15 +45,28 @@
                 <img src="images/collage3.jpg" alt="Imagen 3">
             </div>
          <section id="contacto">
-            <h2>Contacto</h2>
-            <form id="contact-form">
+           <h1>Contacto</h1>
+        <section class="contact-info">
+            <h2>Ponte en Contacto con Nosotros</h2>
+            <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+            <form action="solucionarparacambiaro@dewasa.com" method="post" enctype="text/plain">
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required="">
+                <input type="text" id="name" name="name" required>
+                
                 <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required="">
+                <input type="email" id="email" name="email" required>
+                
                 <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required=""></textarea>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
                 <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section class="map">
+            <h2>Nuestra Ubicación</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434763857!2d-122.42183948431068!3d37.77492917975854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c8b4d8b37%3A0x4a0bfb9f123bbdb2!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1597285408654!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
             </form>
         </section>
     </main>
