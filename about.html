@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - DeWaSa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DeWaSa</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="hamburger">
+                    &#9776;
+                    <ul class="dropdown">
+                        <li><a href="services.html">Servicios</a>
+                            <ul class="submenu">
+                                <li><a href="aireadores.html">Aireadores</a></li>
+                                <li><a href="bombas.html">Bombas Presurizadoras</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="cotizacion.html">Calculadora de Cotización</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Sobre Nosotros</h1>
+        <p>DeWaSa es una empresa dedicada al ahorro de agua, comprometida con el medio ambiente y la eficiencia en el uso de recursos.</p>
+        <h2>Nuestra Misión</h2>
+        <p>Nuestra misión es proporcionar soluciones accesibles y efectivas para reducir el consumo de agua en hogares y empresas.</p>
+        <h2>Nuestro Equipo</h2>
+        <p>Contamos con un equipo de profesionales dedicados a ofrecer el mejor servicio y soporte a nuestros clientes.</p>
+        <div class="team-images">
+            <img src="equipo1.jpg" alt="Equipo 1">
+            <img src="equipo2.jpg" alt="Equipo 2">
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>DeWaSa &copy; 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
