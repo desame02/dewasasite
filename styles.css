@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: blue;
+    background-color: dodgerblue;
     color: white;
     padding: 10px 0;
     display: flex;
@@ -54,7 +54,7 @@ nav {
 .dropdown, .submenu {
     display: none;
     position: absolute;
-    background-color: blue;
+    background-color: dodgerblue;
     top: 40px;
     right: 0;
     list-style: none;
@@ -107,7 +107,7 @@ main {
 }
 
 footer {
-    background-color: blue;
+    background-color: dodgerblue;
     color: white;
     padding: 10px 0;
     text-align: center;
