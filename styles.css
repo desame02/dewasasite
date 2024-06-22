@@ -1,0 +1,174 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+nav {
+    margin-right: 20px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-left: 20px;
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.dropdown, .submenu {
+    display: none;
+    position: absolute;
+    background-color: blue;
+    top: 40px;
+    right: 0;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.dropdown a, .submenu a {
+    display: block;
+    padding: 5px 10px;
+}
+
+.hamburger.open .dropdown {
+    display: block;
+}
+
+.submenu {
+    top: 0;
+    left: 100%;
+}
+
+.hamburger.open .submenu {
+    display: none;
+}
+
+.hamburger.open .dropdown:hover .submenu {
+    display: block;
+}
+
+main {
+    padding: 60px 20px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.intro {
+    max-width: 800px;
+    margin: auto;
+}
+
+.collage {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.collage img {
+    width: 30%;
+    height: auto;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.services-list {
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.services-list h2 {
+    margin-top: 20px;
+}
+
+.product-images, .team-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.product-images img, .team-images img {
+    width: 30%;
+    height: auto;
+}
+
+.calculator {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+.calculator label {
+    display: block;
+    margin-top: 10px;
+}
+
+.calculator input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.calculator button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: darkblue;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
