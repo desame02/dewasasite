@@ -172,3 +172,48 @@ footer {
     font-size: 18px;
     font-weight: bold;
 }
+.contact-info {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact-info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info label {
+    margin-top: 10px;
+}
+
+.contact-info input, .contact-info textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.contact-info button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info button:hover {
+    background-color: darkblue;
+}
+
+.map-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 600px;
+    border: 0;
+}
