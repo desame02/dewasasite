@@ -48,13 +48,13 @@ nav {
 
 .hamburger {
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .dropdown, .submenu {
     display: none;
     position: absolute;
-    background-color: blue;
+    background-color: cyan;
     top: 40px;
     right: 0;
     list-style: none;
