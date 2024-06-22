@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeWaSa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DeWaSa</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="hamburger">
+                    &#9776;
+                    <ul class="dropdown">
+                        <li><a href="services.html">Servicios</a>
+                            <ul class="submenu">
+                                <li><a href="aireadores.html">Aireadores</a></li>
+                                <li><a href="bombas.html">Bombas Presurizadoras</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="cotizacion.html">Calculadora de Cotización</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h1>Bienvenido a DeWaSa</h1>
+            <p>DeWaSa es una empresa enfocada al ahorro de agua y se compromete a que notará diferencias desde el primer día.</p>
+            <div class="offers">
+                <h2>Ofertas</h2>
+                <ul>
+                    <li>Servicio de mantenimiento gratis en los primeros 6 meses.</li>
+                    <li>En la compra de un paquete completo para toda la casa de aireadores, se regalará la bomba presurizadora.</li>
+                </ul>
+            </div>
+            <div class="collage">
+                <img src="collage1.jpg" alt="Imagen 1">
+                <img src="collage2.jpg" alt="Imagen 2">
+                <img src="collage3.jpg" alt="Imagen 3">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>DeWaSa &copy; 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
+
