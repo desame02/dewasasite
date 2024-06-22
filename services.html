@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - DeWaSa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">DeWaSa</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="hamburger">
+                    &#9776;
+                    <ul class="dropdown">
+                        <li><a href="services.html">Servicios</a>
+                            <ul class="submenu">
+                                <li><a href="aireadores.html">Aireadores</a></li>
+                                <li><a href="bombas.html">Bombas Presurizadoras</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">Sobre Nosotros</a></li>
+                        <li><a href="cotizacion.html">Calculadora de Cotización</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Nuestros Servicios</h1>
+        <p>Ofrecemos una amplia gama de servicios enfocados en el ahorro de agua para su hogar y empresa.</p>
+        <div class="services-list">
+            <h2><a href="aireadores.html">Aireadores</a></h2>
+            <p>Descubra los beneficios del uso de aireadores en sus grifos y cómo pueden ayudarle a ahorrar agua y dinero.</p>
+            <h2><a href="bombas.html">Bombas Presurizadoras</a></h2>
+            <p>Conozca las ventajas de instalar bombas presurizadoras para mejorar la presión del agua en su hogar.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>DeWaSa &copy; 2024. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
